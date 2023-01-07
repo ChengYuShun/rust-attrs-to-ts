@@ -16,6 +16,8 @@ impl Parse for Ts {
     }
 }
 
+/// Parse a slice of [`Attribute`] into [`TokenStream2`] with the name of the
+/// attribute specified.
 pub fn attrs_to_ts(attrs: &[Attribute], name: &str) -> Option<TokenStream2> {
     attrs
         .iter()
