@@ -1,0 +1,8 @@
+[package]
+name = "cys-attrs-to-ts"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+syn = "1.0.107"
+proc-macro2 = "1.0.49"
