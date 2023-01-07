@@ -26,7 +26,7 @@ pub fn attrs_to_ts(attrs: &[Attribute], name: &str) -> Option<TokenStream2> {
         .last()
         .map(|attr| {
             parse2::<Ts>(attr.tokens.clone())
-                .expect("invalid parsed attributes")
+                .expect("invalid attributes")
                 .0
         })
 }
